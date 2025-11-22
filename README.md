@@ -1,20 +1,55 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Nexus CRM
 
-# Run and deploy your AI Studio app
+A high-performance Personal CRM focusing on relationship health, pipeline management, and AI-driven insights.
 
-This contains everything you need to run your app locally.
+## 🚀 How to Run Locally
 
-View your app in AI Studio: https://ai.studio/apps/drive/1A7xs6EqmpRGyEqongmloqNN8qEcyn93S
+This project is a React application configured with Vite.
 
-## Run Locally
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
 
-**Prerequisites:**  Node.js
+### 1. Setup
+Clone the repository and install dependencies:
 
+```bash
+npm install
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 2. API Key Configuration
+Create a `.env` file in the root directory of the project to store your Google GenAI API Key.
+
+```env
+API_KEY=your_actual_api_key_here
+```
+
+> **Note:** You can get an API key from [Google AI Studio](https://aistudio.google.com/).
+
+### 3. Run Development Server
+Start the local development server:
+
+```bash
+npm run dev
+```
+
+Open your browser and navigate to `http://localhost:5173`.
+
+## 🛠 Tech Stack
+- **React** - UI Library
+- **Vite** - Build Tool
+- **Tailwind CSS** - Styling
+- **Google GenAI SDK** - AI Features (Data Enrichment, Smart Drafting)
+- **Recharts** - Data Visualization
+- **Lucide React** - Icons
+
+## 📦 Deployment
+This app is ready to be deployed to platforms like Netlify, Vercel, or GitHub Pages.
+
+**Build Command:**
+```bash
+npm run build
+```
+
+**Output Directory:**
+`dist`
